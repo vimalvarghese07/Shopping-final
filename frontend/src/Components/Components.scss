@@ -1,0 +1,204 @@
+@import '../Containers/Theme/Theme.scss';
+
+// .FormFields{
+//     legend{
+//         padding-inline: .5em;
+//         margin-left: 1rem;
+//     }
+// }
+.textfield-container{
+    display: flex;
+    align-items: center;
+    .prefix-icon{
+        color: $placeholderColor;
+    }
+    .postfix-icon{
+        color: $placeholderColor;
+        :hover{
+            color: $fontSecondary;
+        }
+    }
+    .options{
+        color: $fontSecondary;
+    }
+    .active{
+        color: $placeholderColor !important;
+    }
+    input{
+        ::placeholder {
+            color: $placeholderColor;
+          }
+          ::-ms-input-placeholder {
+            color: $placeholderColor;
+          }
+    }
+    legend{
+        color: $color2;
+        font-size: 0.8em;
+        padding-inline: 1em;
+    }
+}
+
+
+.NavBar{
+    background:linear-gradient(90deg, rgba(2,73,111,1) 0%, rgb(43, 183, 208) 48%, rgb(84, 231, 229) 100%);
+    height: 3rem;
+    cursor: pointer;
+    color:$color2;
+    text-transform:uppercase;
+    font-weight: 800;
+    font-size: 18px;
+
+    .right{
+        display: flex;
+        gap:4em;
+        align-items: center;
+        width: 50%;
+    }
+    .left{
+        width:50%;
+        
+    }
+    
+}
+.Btn1{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.card{
+    z-index: 2;
+    padding: 1rem;
+
+}
+
+.cards {
+    width: 18rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .8rem;
+    background-color: white;
+  }
+  .card__skeleton {
+    background-image: linear-gradient(
+          90deg,
+          #ccc 0px,
+          rgb(229 229 229 / 90%) 40px,
+          #ccc 80px
+      );
+    background-size: 300%;
+    background-position: 100% 0;
+    border-radius: inherit;
+    animation: shimmer 1.5s infinite;
+  }
+  .card__title {
+    height: 15px;
+    margin-bottom: 15px;
+  }
+.card__description {
+    height: 100px;
+  }
+  @keyframes shimmer {
+    to {
+      background-position: -100% 0;
+    }
+  }
+.legend2{
+  // color: black;
+  
+  legend{
+    color: black !important;
+    font-weight: 600;
+  }
+  placeholder{
+    color: black;
+  }
+}
+
+
+
+.footer{
+  height:40vh;
+  background:linear-gradient(90deg, rgba(2,73,111,1) 0%, rgb(43, 183, 208) 48%, rgb(84, 231, 229) 100%);
+  display: flex;
+  width:100vw;
+  position: relative;
+  .maven{
+    height:30vh;
+    width:40%;
+    .footer-head{
+      font-size: 25px;
+      font-weight: bold;
+      padding-left:5em;
+      padding-top: 2em;
+      color:#fff;
+    }
+    .footer-desc{
+      width:60%;
+      padding-left:7.5em;
+      color: #fff;
+      padding-top:1em;
+
+    }
+    .insta{
+      width:7em;
+      height:2em;
+      padding-left:7.5em;
+      padding-top:1.5em;
+    }
+  }
+  .companyy{
+    height:30vh;
+    width:20%;
+    .company-head{
+      font-weight: bold;
+      padding-left:4em;
+      padding-top: 3em;
+      color:#fff;
+    }
+    .detail{
+      color: #fff;
+      padding-left:4em;
+    }
+  }
+  .resources{
+    height:30vh;
+    width:20%;
+    .res-head{
+      font-weight: bold;
+      padding-left:4em;
+      padding-top: 3em;
+      color:#fff;
+    }
+    .detail{
+      color: #fff;
+      padding-left:4em;
+    }
+  }
+  .contact{
+    height:30vh;
+    width:20%;
+    .con-head{
+      font-weight: bold;
+      padding-left:4em;
+      padding-top: 3em;
+      color:#fff;
+    }
+    .detail{
+      color: #fff;
+      padding-left:4em;
+    }
+  }
+  .footer-bottom{
+    width:100vw;
+    height:10vh;
+    background-color:black;
+    position: absolute;
+    bottom: 0;
+  }
+ 
+}
+ul li{
+  list-style: none;
+  padding-top:1em;
+}
